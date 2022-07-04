@@ -33,6 +33,10 @@ programa
 		escreva("\nENDEREÇO: ")
 		leia(endereco)
 
+		se(contador_clientes >6){
+			contador_clientes=0	
+		}
+
 		clientes[contador_clientes] = nome
 		clientes[contador_clientes + 1] = cpf
 		clientes[contador_clientes + 2] = endereco
@@ -46,6 +50,7 @@ programa
 		inteiro qtd_clientes = Util.numero_elementos(clientes)
 		inteiro inicio = 0
 		escreva("\n===LISTA DE CLIENTES CADASTRADOS===\n")
+		
 		enquanto(inicio < qtd_clientes){
 			escreva("\n--------------------------------------\n")
 			escreva("\nNOME: " +clientes[inicio])
@@ -98,22 +103,24 @@ programa
 
 		se(opcao==1){
 			cadastrar_cliente()
-		}
-		se(opcao==2){
+		}senao se(opcao==2){
 			cadastrar_destino()
-		}
-		se(opcao==3){
+		}senao se(opcao==3){
 			listar_clientes()
-		}
-		se(opcao==4){
+		}senao se(opcao==4){
 			listar_destinos()
-		}
-		se(opcao==0){
+		}senao se(opcao==0){
 			encerrar()
+		}
+		senao {
+			escreva("por favor digite uma opção válida")
+			exibir_menu()
+			
 		}
 	}
 
 	funcao exibir_menu(){
+		escreva("Bem vindos a JV Tour\n")
 		escreva("\n===============MENU=============\n")
 		escreva("\n1 - CADASTRAR CLIENTE")
 		escreva("\n2 - CADASTRAR DESTINO")
@@ -130,7 +137,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 898; 
+ * @POSICAO-CURSOR = 559; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
