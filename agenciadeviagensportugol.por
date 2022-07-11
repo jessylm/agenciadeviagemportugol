@@ -120,7 +120,7 @@ programa
 	}
 
 	funcao exibir_menu(){
-		escreva("Bem vindos a JV Tour\n")
+		escreva("Bem-vindos a Jessy Tour\n")
 		escreva("\n===============MENU=============\n")
 		escreva("\n1 - CADASTRAR CLIENTE")
 		escreva("\n2 - CADASTRAR DESTINO")
@@ -137,7 +137,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 559; 
+ * @POSICAO-CURSOR = 2625; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
